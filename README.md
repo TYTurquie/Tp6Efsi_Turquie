@@ -1,44 +1,9 @@
-# Gatogram — Instagram-like clone (React + Vite)
+Instagram Clone es una aplicación web inspirada en la interfaz de Instagram desarrollada con React. El proyecto simula el funcionamiento básico de una red social moderna mostrando publicaciones dinámicas obtenidas desde una API externa de imágenes de gatos.
 
-Proyecto: clon visual inspirado en Instagram que consume imágenes de gatos desde la API pública de Cataas.
+La aplicación cuenta con un feed de publicaciones donde cada post muestra una imagen, nombre de usuario, descripción, cantidad de likes y fecha. Todas las publicaciones se generan dinámicamente consumiendo datos desde la API de Cataas, evitando cargar contenido manualmente.
 
-Instalación
-- Ejecutar:
+Además, el proyecto incluye un perfil de usuario emulado que representa a un usuario ya logueado dentro de la aplicación. En este perfil se muestra información como foto de perfil, biografía, seguidores, seguidos y publicaciones.
 
-```bash
-npm install
-npm run dev
-```
+También se implementó una visualización individual de publicaciones mediante un modal o vista detallada que permite ampliar la información de cada post mostrando una imagen más grande, descripción completa, likes y comentarios simulados.
 
-Estructura principal
-- `src/components/` — Componentes reutilizables: `Header`, `Feed`, `Post`, `PostModal`, `Profile`, `Sidebar`.
-- `src/services/api.js` — Lógica para consumir la API de Cataas usando `axios`.
-- `src/data/user.js` — Datos simulados del usuario (perfil).
-- `src/index.css` — Estilos globales y layout.
-- `src/App.jsx` — Enrutamiento y orquestación de datos.
-
-Puntos importantes
-- Consumo de API: `axios` + `useEffect` en `App.jsx` mediante `fetchCats` en `src/services/api.js`.
-- Estado: `useState` usado para posts, loading y `selected` (publicación activa / modal).
-- Props: Los componentes reciben datos via `props` (por ejemplo `Feed` recibe `posts` y `onOpen`).
-- Componentización: cada componente tiene responsabilidad clara y estilos propios en su carpeta.
-- Interacciones: likes (en `Post`), abrir/cerrar modal (en `App`/`PostModal`), navegación entre Feed y Profile (React Router).
-
-Notas sobre diseño
-- Estética inspirada en layouts de Instagram (Header fijo, feed en columna, perfil con grid de imágenes). Se usó CSS puro y fuentes modernas.
-- Responsive: diseño adaptado para pantallas pequeñas con reglas en `index.css`.
-
-API usada
-- https://cataas.com — se solicita `/api/cats?limit=N` para obtener IDs y construir las URLs de imagen.
-
-Consideraciones
-- No se usa backend ni Firebase. Todo es front-end con datos simulados para el perfil.
-- No se usa TypeScript ni Redux.
-
-Si quieres que:
-- agregue paginación o carga infinita,
-- mejore la fidelidad visual con iconografía y animaciones CSS,
-- o incluya pruebas unitarias,
-
-dime y lo agrego.
-"# Tp6Efsi_Turquie" 
+El objetivo principal del proyecto fue practicar conceptos fundamentales de React como componentización, uso de props, manejo de estados con useState, efectos con useEffect y consumo de APIs utilizando Axios, además de trabajar el diseño visual y la organización del código siguiendo una estructura similar a aplicaciones reales.

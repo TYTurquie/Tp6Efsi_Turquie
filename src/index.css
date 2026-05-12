@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root{
 	--bg:#fafafa;
 	--muted:#666;
+	--border:#e5e5e5;
+	--primary-gradient:linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
 
 *{box-sizing:border-box}
 html,body,#root{height:100%}
-body{font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);margin:0;color:#111}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);margin:0;color:#111;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 
 .ig-app{display:flex;gap:20px;max-width:1100px;margin:0 auto;padding:18px}
 .ig-main{flex:1}

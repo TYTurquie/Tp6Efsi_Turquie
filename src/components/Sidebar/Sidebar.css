@@ -1,6 +1,44 @@
-.ig-sidebar{width:260px;padding:16px}
-.ig-profile-compact{display:flex;gap:12px;align-items:center}
-.ig-profile-compact img{width:56px;height:56px;border-radius:50%;object-fit:cover}
-.ig-sidebar__stats{display:flex;gap:12px;margin-top:16px}
-.ig-sidebar__stats div{flex:1;text-align:center}
-.muted{color:#666;font-size:13px}
+.ig-sidebar{
+  width:260px;
+  padding:16px;
+}
+.ig-profile-compact{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:12px;
+  border:1px solid var(--border);
+  background:#fff;
+}
+.ig-profile-compact img{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid var(--border);
+}
+.ig-sidebar__stats{
+  display:flex;
+  gap:2%;
+  margin-top:1%;
+  padding:5%;
+  background:#fff;
+  border-radius:5%;
+  border:1px solid var(--border);
+  
+}
+.ig-sidebar__stats div{
+  flex:1;
+  text-align:center;
+display: inline-block;
+padding-right: -15%;
+}
+.ig-sidebar__stats div strong{
+  font-weight:600;
+  font-size:14px;
+}
+.muted{
+  color:#666;
+  font-size:12px;
+  font-weight:500;
+}

@@ -1,0 +1,65 @@
+.ig-app {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.ig-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.ig-side {
+  width: 280px;
+  position: sticky;
+  top: 70px;
+  height: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .ig-app {
+    max-width: 600px;
+    padding: 0 12px;
+    gap: 16px;
+  }
+  
+  .ig-side {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ig-app {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+  
+  .ig-main {
+    width: 100%;
+  }
+  
+  .ig-side {
+    display: none;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

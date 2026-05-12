@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="ig-header">
       <div className="ig-header__left">
-        <Link to="/" className="ig-logo">Gatogram</Link>
+        <Link to="/" className="ig-logo">Instagram</Link>
       </div>
       <div className="ig-header__center">
         <input className="ig-search" placeholder="Buscar" />
