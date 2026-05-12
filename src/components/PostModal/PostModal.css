@@ -1,0 +1,8 @@
+.ig-modal{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;padding:20px}
+.ig-modal__dialog{background:#fff;width:90%;max-width:900px;display:flex;border-radius:8px;overflow:hidden}
+.modal-media{flex:1}
+.modal-media img{width:100%;height:100%;object-fit:cover}
+.modal-info{width:360px;padding:12px;display:flex;flex-direction:column}
+.modal-body{flex:1;overflow:auto}
+.modal-actions{padding-top:12px}
+.btn-close{background:#efefef;border:0;padding:8px 12px;border-radius:6px;cursor:pointer}

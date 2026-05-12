@@ -1,0 +1,10 @@
+.ig-post{background:#fff;border:1px solid #eee;border-radius:8px;overflow:hidden}
+.post-header{display:flex;gap:12px;align-items:center;padding:12px}
+.post-header img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.post-media img{width:100%;display:block}
+.post-actions{display:flex;align-items:center;gap:12px;padding:10px}
+.like-btn{background:none;border:0;font-size:20px;cursor:pointer}
+.like-btn.liked{color:#e53935}
+.likes{font-weight:600}
+.post-caption{padding:0 12px 12px}
+.small{font-size:12px}
